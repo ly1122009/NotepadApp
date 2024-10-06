@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/D:\Sharework\Udemy\Homeworks\QtFramework\Project\NotepadApp\Icon"/>
+    <qresource prefix="/">
+        <file>Icon/Edit/copy.png</file>
+        <file>Icon/Edit/cut.png</file>
+        <file>Icon/Edit/paste.png</file>
+        <file>Icon/Edit/redo.png</file>
+        <file>Icon/Edit/undo.png</file>
+        <file>Icon/File/new-file.png</file>
+        <file>Icon/File/open-folder.png</file>
+        <file>Icon/File/save-as-file.png</file>
+        <file>Icon/File/save-file.png</file>
+        <file>Icon/about.png</file>
+    </qresource>
+    <qresource prefix="/D:\Sharework\Udemy\Homeworks\QtFramework\Project\NotepadApp\Save"/>
+</RCC>

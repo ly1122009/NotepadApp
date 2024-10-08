@@ -11,6 +11,7 @@
         <file>Icon/File/save-as-file.png</file>
         <file>Icon/File/save-file.png</file>
         <file>Icon/about.png</file>
+        <file>Icon/View/replace.png</file>
     </qresource>
     <qresource prefix="/D:\Sharework\Udemy\Homeworks\QtFramework\Project\NotepadApp\Save"/>
 </RCC>

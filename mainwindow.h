@@ -7,6 +7,7 @@
 #include <QFile>
 #include <QFileDialog>  // used to create dialog boxes allow users to select files or dir
 #include <QTextStream>
+#include "finddialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -42,6 +43,14 @@ private slots:
     void on_actionAbout_notepad_triggered();
 
     void on_actionCopy_triggered();
+
+    void on_actionFind_triggered();
+
+    void on_actionReplace_triggered();
+
+    void on_actionZoom_in_triggered();
+
+    void on_actionZoom_out_triggered();
 
 private:
     Ui::MainWindow *ui;

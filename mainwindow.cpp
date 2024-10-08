@@ -174,3 +174,36 @@ void MainWindow::on_actionCopy_triggered()
     ui->statusbar->showMessage("Have some data need to be pasted");
 }
 
+
+void MainWindow::on_actionFind_triggered()
+{
+    FindDialog *dlg = new FindDialog(this);
+    if (!dlg->exec()) return;
+
+    QTextDocument::FindFlags flags;
+    if (dlg->isMatchCase()) flags = flags | QTextDocument::FindFlag::FindCaseSensitively;
+    if (dlg->isWrapAround()) flags = flags | QTextDocument::FindFlag::FindWholeWords;
+    if (dlg->isBackwards()) flags = flags | QTextDocument::FindFlag::FindBackward;
+
+    bool value = ui->textEdit->find(dlg->text(), flags);
+    if (!value) QMessageBox::information(this, "Not found", "Was not able to find " + dlg->text());
+}
+
+
+void MainWindow::on_actionReplace_triggered()
+{
+
+}
+
+
+void MainWindow::on_actionZoom_in_triggered()
+{
+    ui->textEdit->zoomIn(1);
+}
+
+
+void MainWindow::on_actionZoom_out_triggered()
+{
+    ui->textEdit->zoomOut(1);
+}
+

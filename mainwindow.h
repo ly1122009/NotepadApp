@@ -8,6 +8,7 @@
 #include <QFileDialog>  // used to create dialog boxes allow users to select files or dir
 #include <QTextStream>
 #include "finddialog.h"
+#include "replacedialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
